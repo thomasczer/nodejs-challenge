@@ -1,0 +1,31 @@
+{
+  "name": "coinhouse-nodejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node index.js localhost 8080",
+    "dev": "nodemon --experimental-specifier-resolution=node index.js localhost 8080",
+    "test": "jest"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-list-endpoints": "^6.0.0",
+    "lowdb": "^3.0.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "nodemon": "1.18.4",
+    "superagent": "^8.0.0",
+    "supertest": "^6.2.3"
+  },
+  "keywords": []
+}

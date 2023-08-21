@@ -1,0 +1,11 @@
+html
+  head
+    title= title
+  body
+    h1= title
+    ul
+      each user in users
+        li
+          a(href='/users/' + user.id)
+            = `${user.firstName} ${user.lastName}`
+          = ` - gender: ${user.gender === "male" ? '♂' : '♀'}, age: ${user.age}`
